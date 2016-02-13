@@ -1,4 +1,4 @@
-var config = require(process.env.CONFIGFILE || '../config/config.aws.ses.json');
+var config = require(process.env.CONFIGFILE || '../config/config.aws.json');
 var controller = require('./controller.js');
 
 var email = {

@@ -1,0 +1,14 @@
+{
+  "name": "aws-ses-service",
+  "version": "0.1.0",
+  "description": "Simple Service for Sending mail using the Amazon Simple E-mail Service",
+  "main": "controller.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vree, P. <pascal.vree@rogare.org>",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.2.35"
+  }
+}

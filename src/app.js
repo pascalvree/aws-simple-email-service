@@ -1,7 +1,7 @@
-var config = require('./config.aws.ses.json');
-var facade = require('./facade.js');
+var config = require(process.env.CONFIGFILE || '../config/config.aws.ses.json');
+var controller = require('./controller.js');
 
-var mail = {
+var email = {
   to: "pascal.vree@gmail.com",
   cc: "pascal.vree@rogare.org",
   from: "pascal.vree@rogare.org",
@@ -12,12 +12,4 @@ var mail = {
   }
 };
 
-var Send = function() {
-  facade.Send(config, mail);
-}
-
-module.exports = {
-  Send: Send,
-};
-
-Send();
+controller.Send(config, email);

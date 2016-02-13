@@ -2,8 +2,9 @@
   "name": "aws-ses-service",
   "version": "0.1.0",
   "description": "Simple Service for Sending mail using the Amazon Simple E-mail Service",
-  "main": "controller.js",
+  "main": "src/app.js",
   "scripts": {
+    "start": "node src/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Vree, P. <pascal.vree@rogare.org>",
